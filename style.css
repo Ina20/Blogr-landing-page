@@ -1,0 +1,153 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  font-size: 16px;
+}
+header {
+  background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-repeat: no-repeat;
+  background-position: -390px -360px, center;
+  background-size: 1575px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px 120px 30px;
+  margin-bottom: 100px;
+  color: hsl(0, 0%, 100%);
+  border-bottom-left-radius: 100px;
+  font-family: 'Overpass', sans-serif;
+}
+h1 {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+header p {
+  margin: 0 30px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  text-align: center;
+}
+button {
+  height: 45px;
+  width: 140px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin: 40px 5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+button:first-of-type {
+  background: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+}
+button:first-of-type:hover {
+  background: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+button:last-of-type {
+  background: none;
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+button:last-of-type:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(355, 100%, 74%);
+  cursor: pointer;
+}
+nav {
+  width: 100%;
+  padding: 40px 0 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 101px;
+  height: 40px;
+}
+.menu {
+  width: 32px;
+  height: 18px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 0 0;
+  padding: 0 60px;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+}
+section h2 {
+  font-size: 30px;
+  color: hsl(208, 49%, 24%);
+  font-weight: 600;
+}
+section img {
+  width: calc(100% + 120px);
+}
+section p {
+  color: hsl(207, 13%, 34%);
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 1.7em;
+  font-weight: 300;
+}
+section:nth-of-type(4){
+  background-image: url("./images/bg-pattern-circles.svg"), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-repeat: no-repeat;
+  background-size: 714px;
+  background-position: -130px -330px, center;
+  color: hsl(0, 0%, 100%);
+  padding: 200px 30px 120px 30px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  margin-top: -120px;
+}
+section:nth-of-type(4) p {
+  color: hsl(0, 0%, 100%);
+}
+.img-phones {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  //background: pink;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: hsl(240, 10%, 16%);
+  color: hsl(240, 2%, 79%);
+  font-family: 'Ubuntu', sans-serif;
+  border-top-right-radius: 100px;
+  padding: 80px 30px 40px 30px;
+  margin-top: 100px;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+footer .logo {
+  margin-bottom: 40px;
+}
+ul {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+}
+li:first-of-type {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin: 20px 0 20px 0;
+}
+li:not(:first-of-type):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
