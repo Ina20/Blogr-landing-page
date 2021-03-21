@@ -20,29 +20,53 @@
   <header>
     <nav>
       <img class="logo" src="./images/logo.svg" alt="logo">
-      <img class="menu" src="./images/icon-hamburger.svg" alt="menu">
+      <div class="dropdown">
+        <img onclick="menuDropdownShow()" class="menu" id="menuIcon" src="./images/icon-hamburger.svg" alt="menu">
+        <div id="menuDropdown" class="menu-dropdown-content">
+          <div onclick="dropdownShow('1')" class="menu-dropdown-headings">
+            <p>Product</p>
+            <img src="./images/icon-arrow-dark.svg" alt="arrow" class="arrow" id="arrow1">
+          </div>
+          <div id="dropdown1" class="dropdown-content">
+            <ul>
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </div>
+          <div onclick="dropdownShow('2')" class="menu-dropdown-headings">
+            <p>Company</p>
+            <img src="./images/icon-arrow-dark.svg" alt="arrow" class="arrow" id="arrow2">
+          </div>
+          <div id="dropdown2" class="dropdown-content">
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div onclick="dropdownShow('3')" class="menu-dropdown-headings">
+            <p>Connect</p>
+            <img src="./images/icon-arrow-dark.svg" alt="arrow" class="arrow" id="arrow3">
+          </div>
+          <div id="dropdown3" class="dropdown-content">
+            <ul>
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </div>
+          <div class="dropdown-btn">
+            <button>Login</button>
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
     </nav>
-<!--    Product
-
-    Overview
-    Pricing
-    Marketplace
-    Features
-    Integrations
-
-    Company
-
-    About
-    Team
-    Blog
-    Careers
-
-    Connect
-
-    Contact
-    Newsletter
-    LinkedIn
-
+<!--
     Login
     Sign Up -->
 
@@ -121,5 +145,7 @@
       Coded by <a href="https://github.com/Ina20/Blogr-landing-page">Ina</a>.
     </div>
   </footer>
+
+  <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

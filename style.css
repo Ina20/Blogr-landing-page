@@ -30,7 +30,7 @@ header p {
   text-align: center;
 }
 button {
-  height: 45px;
+  height: 50px;
   width: 140px;
   outline: none;
   border: none;
@@ -44,7 +44,7 @@ button:first-of-type {
   background: hsl(0, 0%, 100%);
   color: hsl(356, 100%, 66%);
 }
-button:first-of-type:hover {
+button:first-of-type:hover, .dropdown-btn button:first-of-type:hover {
   background: hsl(355, 100%, 74%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
@@ -54,7 +54,7 @@ button:last-of-type {
   border: 1px solid hsl(0, 0%, 100%);
   color: hsl(0, 0%, 100%);
 }
-button:last-of-type:hover {
+button:last-of-type:hover, .dropdown-btn button:last-of-type:hover {
   background: hsl(0, 0%, 100%);
   color: hsl(355, 100%, 74%);
   cursor: pointer;
@@ -73,6 +73,99 @@ nav {
 .menu {
   width: 32px;
   height: 18px;
+}
+.menu:hover {
+  cursor: pointer;
+}
+.menu-dropdown-content {
+  display: none;
+  background: hsl(0, 0%, 100%);
+  color: hsl(208, 49%, 24%);
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  width: 85vw;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  //display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.menu-dropdown-headings {
+  display: flex;
+  align-items: center;
+  margin-left: -8px;
+}
+.arrow {
+  width: 12px;
+  height: 9px;
+  margin-left: -20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  background: hsla(240, 2%, 79%, 0.3);
+  justify-content: center;
+  width: 85%;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.dropdown-content li {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  color: hsla(208, 49%, 24%, 0.7);
+  padding: 10px 0;
+}
+.dropdown-content li:hover {
+  color: hsl(208, 49%, 24%);
+  cursor: pointer;
+}
+.dropdown p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  padding: 20px 0;
+  display: flex;
+}
+.dropdown p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.dropdown-btn {
+  border-top: 1px solid hsl(240, 2%, 79%);
+  margin-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-btn button {
+  margin: 5px 0;
+  height: 55px;
+  width: 160px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.dropdown-btn button:first-of-type {
+  color: hsl(208, 49%, 24%);
+}
+.dropdown-btn button:last-of-type {
+  background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  color: hsl(0, 0%, 100%);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+.show {
+  display: flex;
 }
 section {
   display: flex;
@@ -142,12 +235,12 @@ ul {
   margin: 20px 0;
   padding: 0;
 }
-li:first-of-type {
+footer li:first-of-type {
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   margin: 20px 0 20px 0;
 }
-li:not(:first-of-type):hover {
+footer li:not(:first-of-type):hover {
   text-decoration: underline;
   cursor: pointer;
 }
