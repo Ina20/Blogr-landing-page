@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/Ina20/Blogr-landing-page)
-- Live Site URL: ()
+- Solution URL: https://github.com/Ina20/Blogr-landing-page
+- Live Site URL: https://blogr-landing-page-lake.vercel.app
 
 ## My process
 
