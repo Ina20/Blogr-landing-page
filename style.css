@@ -2,12 +2,13 @@ body {
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
   font-size: 16px;
+  overflow-x: hidden;
 }
 header {
   background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-repeat: no-repeat;
   background-position: -390px -360px, center;
-  background-size: 1575px;
+  background-size: 1575px, 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +61,7 @@ button:last-of-type:hover, .dropdown-btn button:last-of-type:hover {
   cursor: pointer;
 }
 nav {
-  width: 100%;
+  width: 90%;
   padding: 40px 0 70px 0;
   display: flex;
   justify-content: space-between;
@@ -84,10 +85,9 @@ nav {
   position: absolute;
   right: 0px;
   top: 70px;
-  width: 85vw;
+  width: 80vw;
   border-radius: 5px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  //display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -167,6 +167,14 @@ nav {
 .show {
   display: flex;
 }
+picture {
+  display: flex;
+  justify-content: center;
+  width: calc(100% + 120px);
+}
+img:not(.arrow) {
+  max-width: 100%;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -174,15 +182,13 @@ section {
   margin: 20px 0 0 0;
   padding: 0 60px;
   text-align: center;
-  font-family: 'Overpass', sans-serif;
 }
-section h2 {
+h2 {
   font-size: 30px;
   color: hsl(208, 49%, 24%);
   font-weight: 600;
-}
-section img {
-  width: calc(100% + 120px);
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
 }
 section p {
   color: hsl(207, 13%, 34%);
@@ -191,27 +197,27 @@ section p {
   line-height: 1.7em;
   font-weight: 300;
 }
-section:nth-of-type(4){
+section:nth-of-type(2){
   background-image: url("./images/bg-pattern-circles.svg"), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
   background-repeat: no-repeat;
-  background-size: 714px;
+  background-size: 714px, 100%;
   background-position: -130px -330px, center;
   color: hsl(0, 0%, 100%);
   padding: 200px 30px 120px 30px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
   margin-top: -120px;
+  margin-bottom: 50px;
 }
-section:nth-of-type(4) p {
+section:nth-of-type(2) p {
   color: hsl(0, 0%, 100%);
 }
 .img-phones {
   position: relative;
   top: 100px;
-  width: 100%;
+  max-width: 100%;
   padding: 0;
   margin: 0;
-  //background: pink;
 }
 footer {
   display: flex;
@@ -243,4 +249,204 @@ footer li:first-of-type {
 footer li:not(:first-of-type):hover {
   text-decoration: underline;
   cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  bottom: -35px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 740px) {
+  section {
+    padding: 0 140px;
+  }
+  section:nth-of-type(2) {
+    padding: 200px 120px 120px 120px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .menu {
+    display: none;
+  }
+  .menu-dropdown-content {
+    background: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    align-items: center;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .dropdown-btn button {
+    margin: 0 5px;
+    padding: 0;
+  }
+  .dropdown-content {
+    //display: none;
+    position: absolute;
+    top: 70px;
+    background: hsl(0, 0%, 100%);
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 30px;
+    width: 200px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .dropdown p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .dropdown p:hover {
+    color: hsl(0, 0%, 100%);
+  }
+  .dropdown-content li {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: hsl(208, 49%, 24%);
+  }
+  .dropdown-content li:hover {
+    font-weight: 500;
+    color: hsl(240, 10%, 16%);
+  }
+  #dropdown1 {
+    left: 0px;
+  }
+  #dropdown2 {
+    left: 135px;
+  }
+  #dropdown3 {
+    left: 280px;
+  }
+  header {
+    background-position: center, center;
+    background-size: 3175px, 100%;
+    padding: 20px 30px 120px 30px;
+  }
+  nav {
+    padding: 40px 0 70px 0;
+  }
+  .logo {
+    padding: 0 30px;
+  }
+  .dropdown-btn button:first-of-type {
+    background: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .dropdown-btn button:first-of-type:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(355, 100%, 74%);
+  }
+  .dropdown-btn button:last-of-type {
+    background: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    font-weight: 500;
+  }
+  .dropdown-btn button:last-of-type:hover {
+    background: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  section:first-of-type {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    text-align: left;
+    margin-top: 120px;
+  }
+  section h2, h1 {
+    text-align: left;
+  }
+  section:first-of-type .wrapper {
+    width: 500px;
+    margin-right: 55%;
+  }
+  section:first-of-type picture {
+    position: absolute;
+    left: 50%;
+    width: 925px;
+  }
+  section:nth-of-type(2) {
+    text-align: left;
+    padding: 50px 15% 75px 55%;
+    background-size: 1014px, 100%;
+    background-position: -220px -450px, center;
+    margin-top: -300px;
+  }
+  .img-phones {
+    position: relative;
+    top: 220px;
+    left: 150px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  section:last-of-type {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-align: left;
+    margin-top: 270px;
+  }
+  section:last-of-type .wrapper {
+    width: 500px;
+    margin-left: 55%;
+  }
+  section:last-of-type picture {
+    position: absolute;
+    right: 50%;
+    width: 974px;
+  }
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: left;
+    padding: 80px 100px 100px 0;
+    margin-top: 300px;
+    position: relative;
+    border-radius: 0;
+  }
+  footer .logo {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    margin: 0;
+  }
+  footer li:first-of-type {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-top: 0;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0px;
+  }
 }
