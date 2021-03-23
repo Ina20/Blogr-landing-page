@@ -95,9 +95,22 @@ nav {
   font-size: 20px;
 }
 .menu-dropdown-headings {
+  height: 60px;
   display: flex;
   align-items: center;
   margin-left: -8px;
+}
+.menu-dropdown-headings:hover + .dropdown-content, .dropdown-content:hover {
+  display: flex;
+}
+.menu-dropdown-element:hover .arrow {
+  transform: rotate(180deg);
+}
+.menu-dropdown-element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .arrow {
   width: 12px;
@@ -283,6 +296,15 @@ footer li:not(:first-of-type):hover {
     padding: 0;
     width: 100%;
     color: hsl(0, 0%, 100%);
+    align-items: center;
+  }
+  .menu-dropdown-headings {
+    height: 75px;
+  }
+  .menu-dropdown-element {
+    width: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .dropdown {

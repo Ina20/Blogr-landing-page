@@ -11,12 +11,3 @@ function menuDropdownShow() {
     document.getElementById("menuIcon").style.height = "18px";
   }
 };
-
-function dropdownShow(id) {
-  document.getElementById("dropdown" + id).classList.toggle("show");
-  document.getElementById("arrow" + id).style.transform = "rotate(180deg)";
-  console.log()
-  if(!document.getElementById("dropdown" + id).classList.contains("show")) {
-    document.getElementById("arrow" + id).style.transform = "rotate(0deg)";
-  }
-}

@@ -18,50 +18,56 @@
       <div class="dropdown">
         <img onclick="menuDropdownShow()" class="menu" id="menuIcon" src="./images/icon-hamburger.svg" alt="menu">
         <div id="menuDropdown" class="menu-dropdown-content">
-          <div onclick="dropdownShow('1')" class="menu-dropdown-headings">
-            <p>Product</p>
-            <picture>
-              <source media="(min-width:1350px)" srcset="./images/icon-arrow-light.svg">
-              <img src="./images/icon-arrow-dark.svg" alt="arrow" class="arrow" id="arrow1">
-            </picture>
+          <div class="menu-dropdown-element">
+            <div class="menu-dropdown-headings">
+              <p>Product</p>
+              <picture>
+                <source media="(min-width:1350px)" srcset="./images/icon-arrow-light.svg">
+                <img src="./images/icon-arrow-dark.svg" alt="arrow" class="arrow" id="arrow1">
+              </picture>
+            </div>
+            <div id="dropdown1" class="dropdown-content">
+              <ul>
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </div>
           </div>
-          <div id="dropdown1" class="dropdown-content">
-            <ul>
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Marketplace</li>
-              <li>Features</li>
-              <li>Integrations</li>
-            </ul>
+          <div class="menu-dropdown-element">
+            <div class="menu-dropdown-headings">
+              <p>Company</p>
+              <picture>
+                <source media="(min-width:1350px)" srcset="./images/icon-arrow-light.svg">
+                <img src="./images/icon-arrow-dark.svg" alt="arrow" class="arrow" id="arrow2">
+              </picture>
+            </div>
+            <div id="dropdown2" class="dropdown-content">
+              <ul>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </div>
           </div>
-          <div onclick="dropdownShow('2')" class="menu-dropdown-headings">
-            <p>Company</p>
-            <picture>
-              <source media="(min-width:1350px)" srcset="./images/icon-arrow-light.svg">
-              <img src="./images/icon-arrow-dark.svg" alt="arrow" class="arrow" id="arrow2">
-            </picture>
-          </div>
-          <div id="dropdown2" class="dropdown-content">
-            <ul>
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Careers</li>
-            </ul>
-          </div>
-          <div onclick="dropdownShow('3')" class="menu-dropdown-headings">
-            <p>Connect</p>
-            <picture>
-              <source media="(min-width:1350px)" srcset="./images/icon-arrow-light.svg">
-              <img src="./images/icon-arrow-dark.svg" alt="arrow" class="arrow" id="arrow3">
-            </picture>
-          </div>
-          <div id="dropdown3" class="dropdown-content">
-            <ul>
-              <li>Contact</li>
-              <li>Newsletter</li>
-              <li>LinkedIn</li>
-            </ul>
+          <div class="menu-dropdown-element">
+            <div class="menu-dropdown-headings">
+              <p>Connect</p>
+              <picture>
+                <source media="(min-width:1350px)" srcset="./images/icon-arrow-light.svg">
+                <img src="./images/icon-arrow-dark.svg" alt="arrow" class="arrow" id="arrow3">
+              </picture>
+            </div>
+            <div id="dropdown3" class="dropdown-content">
+              <ul>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </div>
           </div>
           <div class="dropdown-btn">
             <button>Login</button>
